@@ -7,4 +7,6 @@ Coming to Development part, developer should focus on readable and easily mainta
 
 # Myself as Frontend Developer Rating(current)- 3/10
 
+fgdgg
+
  
