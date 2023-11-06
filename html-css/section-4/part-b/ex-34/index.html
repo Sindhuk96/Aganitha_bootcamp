@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fashion Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .navigation {
+            background-color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .menu-item {
+            display: inline-block;
+            padding: 10px 20px;
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .menu-item:last-child {
+            border-right: none;
+        }
+
+        .menu-item img {
+            max-width: 150px;
+            max-height: 70px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }        
+
+        .gallery {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 40px 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .thumbnail {
+            width: 45%;
+            height:400px;
+            display:inline-block; 
+            position:relative;
+            left:15px;          
+            margin: 10px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+        }
+
+        .thumbnail img {
+            display:inline-block; 
+            width: 100%;
+            border: 2px solid #333;
+            border: 1px solid #fff;
+            border-radius: 15px;
+            height:80%;
+        }
+
+        .thumbnail-caption {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="menu-item">
+            <img src="newarrival.jpg" alt="New Arrivals">
+            New Arrivals
+        </div>
+        <div class="menu-item">
+            <img src="new-collection.webp" alt="Collections">
+            Collections
+        </div>
+        <div class="menu-item">
+            <img src="sale.jpg" alt="Sale">
+            Sale
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="thumbnail">
+            <img src="img1.jpg" alt="Vincent van Gogh">
+            <div class="thumbnail-caption">
+                <h3>Pullover shirt</h3>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <img src="img2.jpg" alt="Vincent van Gogh">
+            <div class="thumbnail-caption">
+                <h3>Sweat Shirt</h3>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <img src="img3.jpg" alt="Georgia O'Keeffe">
+            <div class="thumbnail-caption">
+                <h3>Hoodie</h3>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="img4.jpg" alt="Georgia O'Keeffe">
+            <div class="thumbnail-caption">
+                <h3>Oversized Sweat shirt</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

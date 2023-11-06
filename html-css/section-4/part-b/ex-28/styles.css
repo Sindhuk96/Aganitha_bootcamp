@@ -1,0 +1,11 @@
+.header{
+    height:80px;
+    background-color: #011f4b;
+    text-align: center;
+}
+
+.header h1{
+    color:#d0cfdb;
+    position:relative;
+    top:25%;
+}

@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    text-align:center;  
+    height: 100vh;
+    background-image: url('background.jpg');
+}
+
+.play-now-button {
+     display: inline-block;
+    background-color: #080808;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 40px;
+    border: 2px solid #694311;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    width:300px;
+    height:100px;
+    position: relative;
+    top: 20px;
+}
+
+.play-now-button:hover {
+    background-color: #694311;
+    border: 2px solid #edf0f1;
+}
+
+.controller-icon {
+    font-size: 50px;
+    margin-right: 10px;
+    position: relative;
+    top: 15px;
+}

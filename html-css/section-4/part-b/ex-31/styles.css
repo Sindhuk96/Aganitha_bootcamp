@@ -1,0 +1,11 @@
+.row{
+    max-width: 100%;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    min-height: 100vh;
+   
+  }  
+

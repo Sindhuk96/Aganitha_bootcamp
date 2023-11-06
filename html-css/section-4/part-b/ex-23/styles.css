@@ -1,0 +1,37 @@
+.info-card {
+    border: 1px solid #ccc;
+    width: 400px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    background-color: #7dc0a4;
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    text-align: left;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.age,
+.gender,
+.quote,
+.bio {
+    margin: 5px 0;
+    font-size:18px;
+}

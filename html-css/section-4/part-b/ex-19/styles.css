@@ -1,0 +1,19 @@
+.column {
+    float: left;
+    width: 30%;
+    min-height: 100vh;
+   
+  }
+  
+
+.left{
+    
+    margin-right:20px;
+}
+
+.middle
+{   
+   
+    margin-left: 10px;
+    margin-right:10px;
+}

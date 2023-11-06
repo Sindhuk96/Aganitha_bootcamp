@@ -1,0 +1,20 @@
+/*.container { 
+    height: 200px;
+    position: relative;
+    border: 3px solid green; 
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+  }*/
+.container {
+    text-align: center; /* Center the content horizontally */
+}
+
+button {
+    margin: 0 auto; /* Apply margin to center the button */
+}

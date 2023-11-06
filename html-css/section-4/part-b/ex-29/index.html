@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Art Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #011f4b;
+        }
+
+        .gallery {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 40px 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .thumbnail {
+            width: 45%;
+            height:400px;
+            display:inline-block; 
+            position:relative;
+            left:15px;          
+            margin: 10px;
+        }
+
+        .thumbnail img {
+            display:inline-block; 
+            width: 100%;
+            border: 2px solid #333;
+            border-radius: 5px;
+            height:80%;
+        }
+
+        .thumbnail-caption {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="thumbnail">
+            <img src="Dafen Village.jpg" alt="Vincent van Gogh">
+            <div class="thumbnail-caption">
+                <h3>Vincent van Gogh</h3>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <img src="Bulb_Fields.jpg" alt="Vincent van Gogh">
+            <div class="thumbnail-caption">
+                <h3>Vincent van Gogh</h3>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <img src="white flower.jpg" alt="Georgia O'Keeffe">
+            <div class="thumbnail-caption">
+                <h3>Georgia O'Keeffe</h3>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="yellow flower.jpg" alt="Georgia O'Keeffe">
+            <div class="thumbnail-caption">
+                <h3>Georgia O'Keeffe</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
