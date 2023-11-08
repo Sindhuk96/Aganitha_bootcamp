@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-form {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-group {
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    flex: 1;
+    padding: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #2581c4;
+}

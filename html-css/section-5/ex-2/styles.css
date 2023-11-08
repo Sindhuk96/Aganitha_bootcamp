@@ -1,0 +1,29 @@
+.row{
+    display:flex;
+    flex-wrap: wrap; 
+    height:100vh; 
+    text-align: center;  
+}
+
+.left{
+    flex:50%;
+    background-color: #00563E;
+}
+
+.center{
+    flex:25%;
+    background-color: #006E50;
+}
+
+.right{
+    flex:25%;
+    background-color: #008562
+}
+
+p{  
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    font-size:50px;
+    color:white;
+}
