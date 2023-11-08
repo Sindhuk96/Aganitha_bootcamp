@@ -236,27 +236,27 @@
      grid-template-columns: 100%;
      background-image: url(clothes-img.jpg);
      background-size:cover;
-     background-position:center; /* Set to a single column to stack content and image */
+     background-position:center;
    }
  
    .content .info {
      grid-row: 1 / 2;
      grid-column: 1 / 2;
-     align-items: center; /* Center align horizontally */
-     text-align: center; /* Center align text within the container */
+     align-items: center;
+     text-align: center;
    }
  
    .content .info h2 {
-     font-size: 35px; /* Adjust the font size as needed */
-     line-height: 40px; /* Adjust the line height as needed */
-     margin-bottom: 10px; /* Reduce the margin if necessary */
+     font-size: 35px; 
+     line-height: 40px; 
+     margin-bottom: 10px; 
      color: #fff;
    }
  
    .content .info p {
-     font-size: 14px; /* Adjust the font size as needed */
+     font-size: 14px; 
      margin-bottom: 20px;
-     color: #fff; /* Reduce the margin if necessary */
+     color: #fff;
    }
  }
  

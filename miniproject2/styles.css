@@ -171,9 +171,9 @@
    grid-gap: 50px;
    padding: 30px 100px;
 }
- /* Card Styles (for the second page) */
+
 .card {
-   background-image: url('designer.avif'); /* Set your background image */
+   background-image: url('designer.avif'); 
    background-size: cover;
    background-position: center;
    color: #fff;   
@@ -183,15 +183,15 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;  
-   border-radius: 10px; /* Add rounded corners */
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-   transition: transform 0.3s; /* Add a hover effect */
+   border-radius: 10px; 
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+   transition: transform 0.3s; 
    height:60vh;
    
 }
 
 .card:hover {
-   transform: scale(1.05); /* Enlarge the card on hover */
+   transform: scale(1.05); 
 }
 
 .card h2 {
@@ -215,11 +215,11 @@
     transform: scale(1.1);
 }
 
-/* Footer Styles */
+
 .footer {
    display: grid;
    grid-template-columns: 40% 40% 20%;
-   background-color: #362925; /* Set your desired background color */
+   background-color: #362925; 
    color: #000;
    padding: 50px;
    grid-gap:2rem;
@@ -268,7 +268,7 @@ li {
 }
 
 a:hover {
-   color: #dbc9b8; /* Change color on hover */
+   color: #dbc9b8; 
 }
 
 .copyright {
@@ -406,7 +406,7 @@ a:hover {
    .footer {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      background-color: #362925; /* Set your desired background color */
+      background-color: #362925; 
       color: #000;
       padding: 50px;
       grid-gap:1rem;

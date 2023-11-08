@@ -6,6 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     height:100vh;
+    width:100%;
 }
 
 .grid-container {
@@ -16,15 +17,28 @@ body {
 }
 
 .grid-item {
-    background-color: #3498db;
+    background-color: #db346c;
+    width:100px;
     color: #fff;
     padding: 20px;
-    text-align: center;
+   
+}
+
+@media (min-width: 769px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr); 
+    }
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 460px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
