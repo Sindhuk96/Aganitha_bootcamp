@@ -7,7 +7,8 @@
   
   body {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
+    background-color: #cccccc;
   }
   
   .container {
@@ -49,27 +50,28 @@
   .header{  
     display:flex;
     justify-content: space-between;
+    height:80%;
     background: rgb(255,100,0);
     background: linear-gradient(90deg, rgba(255,100,0,1) 0%, rgba(255,255,255,1) 49%, rgba(15,255,0,1) 100%);
     font-family: tahoma; 
   } 
 
   .logo1 img{    
-    width:100px;
-    height:100px;
+    width:120px;
+    height:120px;
     border-spacing: 2px;
   }
 
   .logo2 img{    
-    width:100px;
-    height:100px;
+    width:120px;
+    height:120px;
     border-spacing: 2px;
   }
 
   .title h1{
     text-align: center;
    margin-top: 20px;
-   color:#ad2F0e;
+   color:#ad2F0e; 
     }
 
     .nav-links{
@@ -79,6 +81,7 @@
       align-items: center;
       justify-content: center;
       color:white; 
+      height:calc(100%-80%-17px);
           
     }
 
@@ -95,7 +98,6 @@
   .content {
     grid-row: 4 / 11;
     grid-column: 1 / 13;
-    background-color: blue;
     display:grid;
     grid-template-columns: 1fr 3fr;
   }
@@ -109,14 +111,17 @@
   h6{
     background-color: #0e6204;
     color:white;
-    height:2%;
+    height:5%;
   }
 
   .sidebar-links{
-    text-align: center;
+   
     display:flex;
     flex-direction: column;
+    justify-content: flex-start;
     width:100%;
+    margin-left:10px;
+    margin-top:20px;
   }
 
   ul{
@@ -152,23 +157,63 @@
       width:100%;
       display: flex;
       justify-content: space-between;
+      padding:15px 10px;
+      background-color: #efefef;
   }
 
   .option-links{
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
+    padding:0 5px;
+    background-color: #efefef;
   }
 
   .option-links img{
-    width:20px;
-    height:20px;
+    width:14px;
+    height:13px;
+  }
+
+  .option-links a{
+    font-size: 11px;
+    text-decoration: none;
+    margin-right:25px;
+  }
+
+  .QuickLinks{
+    font-size: 10px;
+  }
+
+  .QuickLinks #dropdown{
+    width: 150px;
+    font-size: 10px;
   }
   
+  .subcontent{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size:small;
+    padding:10px 10px;
+  }
+
+  .source{
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .footer {
     grid-row: 11 / 13;
     grid-column: 1 / 13;
-    background-color: grey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    text-align: center;
+    padding: 10px 10px;
+    
   }
 
-
-  
+  .copyright{
+      color:gray;
+  }
