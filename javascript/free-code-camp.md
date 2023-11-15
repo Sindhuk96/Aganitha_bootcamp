@@ -1,0 +1,6 @@
+![oops](oop.PNG)
+![BasicAlgoScripting](basicAlgoScripting.PNG)
+![Debugging](Debugging.PNG)
+![RegularExpressions](<Regular expressions.PNG>)
+![ES6](ES6.PNG)
+![BasicJavascript](BasicJS.PNG)
