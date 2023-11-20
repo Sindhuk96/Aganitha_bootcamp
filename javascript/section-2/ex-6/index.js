@@ -1,5 +1,5 @@
 const person={
-    name: Sindhu,
+    name: "Sindhu",
     age:27,
     address:["Hyderabad","Vijayawada","Mumbai","Vizag"]
 };

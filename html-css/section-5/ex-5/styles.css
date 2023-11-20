@@ -5,11 +5,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Center vertically within the viewport */
+    height: 100vh;
 }
 
 .container {
-    text-align: center; /* Center the content horizontally */
+    text-align: center; 
 }
 
 .login-form {

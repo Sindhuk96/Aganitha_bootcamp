@@ -7,3 +7,8 @@ const person={
 console.log(`name: ${person.name}`);
 console.log(`age: ${person.age}`);
 console.log(`address: ${person.address}`);
+
+
+
+
+
