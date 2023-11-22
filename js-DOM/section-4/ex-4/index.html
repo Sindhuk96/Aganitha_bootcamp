@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete Example</title>
+    <style>
+        #autocomplete-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        #autocomplete-list {
+            position: absolute;
+            z-index: 1;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        #autocomplete-list li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #autocomplete-list li:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<div id="autocomplete-container">
+    <input type="text" id="autocomplete-input" placeholder="Enter Car company">
+    <ul id="autocomplete-list"></ul>
+</div>
+
+<script>
+    const autocompleteInput = document.getElementById('autocomplete-input');
+    const autocompleteList = document.getElementById('autocomplete-list');
+
+    const predefinedList = ['Maruti', 'Tata', 'MG', 'Honda', 'Hyundai', 'BMW'];
+
+    autocompleteInput.addEventListener('input', function() {
+        const inputText = this.value.toLowerCase();
+        const suggestions = predefinedList.filter(item => item.toLowerCase().includes(inputText));
+
+        showSuggestions(suggestions);
+    });
+
+    function showSuggestions(suggestions) {
+        autocompleteList.innerHTML = '';
+
+        suggestions.forEach(suggestion => {
+            const li = document.createElement('li');
+            li.textContent = suggestion;
+
+            li.addEventListener('click', function() {
+                autocompleteInput.value = suggestion;
+                autocompleteList.innerHTML = '';
+            });
+
+            autocompleteList.appendChild(li);
+        });
+    }
+
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('#autocomplete-container')) {
+            autocompleteList.innerHTML = '';
+        }
+    });
+</script>
+
+</body>
+</html>

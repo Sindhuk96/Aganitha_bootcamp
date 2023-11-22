@@ -1,0 +1,15 @@
+.tabs{
+    display:flex;
+    cursor:pointer;
+}
+
+.tab {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+
+.tab-content{
+    display:none;
+}
+

@@ -1,0 +1,13 @@
+.modal{
+    width:400px;
+    height:200px;
+    text-align:center;
+    border:2px solid black;
+    display:none;
+}
+
+.close{
+    display:flex;
+    justify-content: end;
+    cursor:pointer;
+}

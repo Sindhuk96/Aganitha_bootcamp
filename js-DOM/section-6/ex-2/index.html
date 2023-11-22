@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-gap: 10px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .country-container {
+            width: 150px;
+            height: 150px;
+            background-color: #34dbb1;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        const countries = [
+            'India', 'Srilanka', 'Bangladesh', 'Nepal', 'China', 'Indonesia', 'Argentina',
+            'Australia', 'America', 'Austria', 'Germany', 'NewZealand'
+            
+        ];
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const body = document.body;
+
+            countries.forEach(country => {
+                const countryContainer = document.createElement('div');
+                countryContainer.classList.add('country-container');
+                countryContainer.textContent = country;
+
+                body.appendChild(countryContainer);
+            });
+        });
+    </script>
+
+</body>
+</html>

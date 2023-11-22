@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section-header{
+            border: 1px solid Black;
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="section">
+    <div class="section-header" onclick="toggleSection(this)">Section 1</div>
+    <div class="section-content">
+        <p>Click on section-1 to expand/collapse</p>
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-header" onclick="toggleSection(this)">Section 2</div>
+    <div class="section-content">
+        <p>Click on section-2 to expand/collapse</p>
+    </div>
+</div>
+
+<script>
+    function toggleSection(header) {
+        const content = header.nextElementSibling;
+        content.style.display = (content.style.display === 'none' || content.style.display === '') ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>
