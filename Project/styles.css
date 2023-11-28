@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    border:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height:auto;
+    display:grid;
+    grid-template-columns:1fr;    
+}
+
+.content-container {
+    display: flex;   
+    gap:5rem;
+    margin:50px 20px;
+    
+}
+
+.filters {
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    width: 25%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    
+}
+
+.filters .filter-header{
+    margin:30px 0;   
+}
+
+.filters input{
+    margin-bottom: 10px;
+    height:30px;
+}
+
+.apply-filter{
+    background-color:#205493 ;
+    height: 40px;
+}
+
+.trials-container{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 70vw;
+    height:100%;    
+    gap:15px;
+    margin-top: 0;
+    overflow: auto;
+     
+}
+.trial-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    background-color: #f4f4f4;
+    width:100%;
+    margin:20px 5px;
+    padding:10px 10px;
+    color:#205493; 
+}
+
+.card-header{
+    display:flex;
+    justify-content: space-between;
+    margin:15px;
+}
+
+.collapsible-content {
+    display: block;
+}
+
+.collapsed {
+    display: none;
+}
+.filters ul{
+    position: relative;
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.filters li{
+    padding: 10px;
+    cursor: pointer;
+}
+.filters li:hover {
+    background-color: #ddd;
+}
+
+/* Add this to your styles.css or in a style tag in the head of your HTML */
+.modal {
+    display: flex;
+    flex-direction: column; 
+    position:fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    height: 50vh;
+    color:#205493;
+    
+    
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.trial-properties{
+    display: flex;    
+    flex-wrap: wrap;
+    width:100%;
+    height:70%; 
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3px;
+}
+
+.modal-content button{
+    height:20px;
+    background-color:#205493 ;
+}
+
+.trailViewOptions{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1rem;    
+}
+
+.cardview, .tableview, .manage-button, .dataVisual, .sort-dropdown{
+    background-color: #205493;
+    color:white;
+    height:30px;
+    padding:5px 5px;
+}
+
+.card-header button{
+    background-color: #205493;
+    color: white;
+    height:25px;
+    border-radius: 50px;
+}
+
+#prevPage, #nextPage{
+    color: #205493;
+    margin-right: 15px;
+}
+
+.load{
+    width:90%;
+    height:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination{
+    position: relative;
+    bottom:0;
+}
+
+table {
+    width:70vh;
+    overflow: auto;
+    margin-top: 20px;
+     /* Prevent the table from changing size based on content */
+}
+
+tr{
+    padding:0;
+    margin:0;
+}
+
+th,td{
+    padding: 0 15px;
+    color:#205493;
+  }
+
+
+
+/* Add this style to hide horizontal scrollbar initially */
+.trials-container::-webkit-scrollbar {
+    display: block;
+}
+
+/* Show horizontal scrollbar on hover */
+.trials-container:hover::-webkit-scrollbar {
+    display: block;
+}

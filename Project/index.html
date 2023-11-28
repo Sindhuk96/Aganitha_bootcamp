@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+    <div id="header" class="header"></div>
+    <div class="content-container">
+        <!-- Filters Section (20%) -->
+        <aside class="filters">
+            <div class="filter-header"><h3>Filters</h3></div>           
+            
+            <label for="Disease_Type">Disease Type</label>
+            <input type="search" id="Disease_Type" name="Disease_Type" class="autocomplete-input" aria-label="Search for Disease Type" />
+            
+            <label for="Trial_Phase">Trial Phase</label>
+            <input type="search" id="Trial_Phase" name="Trial_Phase" class="autocomplete-input" aria-label="Search for Trial Phase" />
+            
+            <label for="Location">Location</label>
+            <input type="search" id="Location" name="Location" class="autocomplete-input" aria-label="Search for Location" />
+            
+            <label for="Status">Status</label>
+            <input type="search" id="Status" name="Status" class="autocomplete-input" aria-label="Search for Status" />
+            
+            <label for="Funding_Source">Funding Source</label>
+            <input type="search" id="Funding_Source" name="Funding_Source" class="autocomplete-input" aria-label="Search for Funding Source" />
+               
+             <!-- <div id="loading-spinner">Loading...</div> -->
+            <button class="apply-filter" onclick="applyFilters()">Apply Filters</button>
+        </aside>
+
+        <main class="trials-container">
+            <div class="trailViewOptions">
+                <button class="cardview active">CardView</button>
+                <button class="tableview">TableView</button>              
+                <button class="manage-button" onclick="openManageModal()">Manage Trials</button>
+                <button class="dataVisual" onclick="redirectToVisualization()">Data Visualization</button>
+                <div class="sorting">
+                    <label for="sortTrialId"><span></span></label>
+                        <select id="sortTrialId" class="sort-dropdown">
+                            <option value="id_asc">Sort by ID (Ascending)</option>
+                            <option value="id_desc">Sort by ID (Descending)</option>
+                            <option value="age_asc">Sort by Age (Ascending)</option>
+                            <option value="age_desc">Sort by Age (Descending)</option>
+                        </select>
+                </div>               
+            </div>
+
+
+            <div class="trials">
+            <!-- Display cards for trials with collapsible elements -->
+                
+            </div>
+            <div id="manageModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeManageModal()">&times;</span>
+                    <div class="trial-properties"></div>
+                    <button onclick="applyManageChanges()">Apply Changes</button>
+                </div>
+            </div>
+            <div class="pagination">
+                <button id="prevPage" onclick="changePage(-1)">Previous Page</button>
+                <span id="currentPage"><strong>Page 1</strong></span>
+                <button id="nextPage" onclick="changePage(1)">Next Page</button>
+            </div>
+
+        </main>    
+    </div>
+       
+    
+    <div class="footer" id="footer"></div>
+    <script src="autocomplete.js"></script>
+    <script src="index.js"></script>
+    
+    
+</body>
+</html>

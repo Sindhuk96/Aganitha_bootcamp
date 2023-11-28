@@ -1,0 +1,41 @@
+/* Add your styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    width:100vw;
+    height:100vh;
+}
+
+.graphs {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.graphs img {
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.graphs img:hover {
+    border-color: #205493;
+}
+
+.mainCanvassection {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#mainCanvas {
+    width: 60%; 
+    max-width: 600px;
+    height: auto;
+    max-height: 80vh; 
+    margin:  auto; 
+}
+
+

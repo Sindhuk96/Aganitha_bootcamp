@@ -45,8 +45,14 @@
 
     autocompleteInput.addEventListener('input', function() {
         const inputText = this.value.toLowerCase();
-        const suggestions = predefinedList.filter(item => item.toLowerCase().includes(inputText));
+        
+        // Check if the input is empty
+        if (!inputText) {
+            autocompleteList.innerHTML = '';
+            return;
+        }
 
+        const suggestions = predefinedList.filter(item => item.toLowerCase().includes(inputText));
         showSuggestions(suggestions);
     });
 
