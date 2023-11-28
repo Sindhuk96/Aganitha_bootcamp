@@ -21,6 +21,7 @@ let containerTrials=[];
 document.addEventListener("DOMContentLoaded", function () {
     // Show loading indicator
     showLoadingIndicator();
+    closeManageModal();
 
     // Simulate data fetching with setTimeout
     setTimeout(() => {
